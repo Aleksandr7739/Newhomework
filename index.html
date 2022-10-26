@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        let person = {
+            name: 'Вася',
+            age: 33,
+            city: 'Ростов',
+            pensionAge: 65,
+            setNewAge(newAge) {
+                this.age = newAge;
+            },
+            getYearsBeforePension(leaveAge) {
+                person.pensionAge = leaveAge;
+
+            }
+
+        }
+
+
+        person.getYearsBeforePension('осталось до пенсии 15лет')
+        person.setNewAge(50)
+        console.log(person)
+    </script>
+
+</body>
+
+</html>
